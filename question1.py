@@ -1,3 +1,5 @@
+#. First question 
+
 class Check:
     def _init_(self, l1,l2):
         self.l1 = l1
@@ -24,3 +26,22 @@ def is_check(poly,poi):
 poly = [Check(-3,2),Check(-2,-0.8),Check(0,1.2),Check(2.2,0),Check(2,4.5)]
 s = Check(0,0)
 print(is_check(poly,s))
+
+
+#############################################
+
+#. 2nd question
+
+
+def Sunlight(arr, n): 
+    count = 1 
+    curr_max = arr[0] 
+    for i in range(1, n): 
+        if (arr[i] > curr_max): 
+            count += 1
+            curr_max = arr[i] 
+    return count 
+arr = list(map(int,input().split()))
+n = len(arr) 
+print(Sunlight(arr,n)) 
+
